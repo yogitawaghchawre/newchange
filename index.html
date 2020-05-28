@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title> facilitator</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="facilitator.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script >
+   function getfocustxt(){
+     document.getElementById("name").focus();
+    
+   }
+ </script>
+ <style>
+  .imp:after {
+    content:" *";
+    color: red;
+  }
+</style>
+</head>
+<body onload="getfocustxt();">
+	<div class="container">
+		<h2>JOIN TMHM </h2>
+		<div class="img">
+			<img src="change.jpg">
+		</div>
+	</div>
+	
+ <div class="wrapper">
+    <div class= "title">
+      BECOME A CHANGEMAKER 
+    </div>
+    <form method="" id="form" >
+     <div class="form">
+     	<div class="form-group">
+     		<div class="col-sm-6">
+     	     
+              <input type="text"  id="name"  placeholder="Enter Name" required>  
+         </div>
+          <br>
+         <div class="col-sm-6">
+             
+             <input type="email"  id="email" placeholder="Enter Email"  required>   
+         </div>
+     </div> 
+
+       <div class="form-group">
+     	    <div class="col-sm-6"> 
+
+               <input type="tel" class="input"  placeholder="Enter Mobile no"  id="phone"  pattern="^\d{10}$" required>
+            </div>   
+        <div class="col-sm-6">
+            <input type="text" name="exp1" id="list" list="List" placeholder="Experience" size="20" style="height: 40px;" required="">
+           <datalist id="List">
+            <option value="3-6 yrs">  
+            <option value="6-10 yrs">
+            <option value="10+ yrs"> 
+           
+       </datalist>
+      </div>
+     </div>
+
+
+       <div class="form-group">
+     	   <div class="col-sm-6">  
+
+         
+              <input type="text" name="exp1" id="list2" list="List" placeholder="Training Experience" size="20" style="height: 40px;">
+           <datalist id="List">
+            <option value="3-6 yrs">  
+            <option value="6-10 yrs">
+            <option value="10+ yrs">
+       </datalist>
+      </div>
+
+        <div class="col-sm-6">  
+
+        <input type="url" name="url" id="list3" placeholder="Enter LinkedIn Profile Link" pattern="^http(s)?:\/\/(www\.)?linkedin\.com\/in\/.*$" size="20" style="height: 40px;">
+        
+       </div>
+      </div>
+       <div class="form-group">
+     	   <div class="col-sm-6">  
+               <label > Profile</label>
+               <input type="file"  id= "file" title="Attach resume in doc/pdf format" accept=".pdf,.doc">
+       </div>
+           <div class="col-sm-4">  
+                <label > Video Bite</label>
+                <input type="file" name="file" id="video" placeholder="Send your 1min videobite"  accept="video/*">
+       </div>
+      </div>
+      <div class="form-group">
+     	   <div class="col-sm-6">  
+              
+           <textarea rows="3" cols="83" maxlength="" id="textar" placeholder="Enter Questions/Suggestions" size="40"></textarea>
+          </div>
+       </div>
+
+   
+     <div class="submit">
+        <input type="submit" value="submit">
+    </div>
+   </div>
+</form>
+</body>
+</html>
